@@ -3076,7 +3076,13 @@ static void do_homing_move(const AxisEnum axis, const float distance, const floa
  */
 
 static void homeaxis(const AxisEnum axis) {
-
+#ifdef FAKE_Y_HOME
+  if (axis == Y_AXIS) {
+    set_axis_is_at_home(axis);
+        sync_plan_position();
+        return;
+  }
+#endif
   #if IS_SCARA
     // Only Z homing (with probe) is permitted
     if (axis != Z_AXIS) { BUZZ(100, 880); return; }

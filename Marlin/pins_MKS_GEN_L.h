@@ -50,3 +50,6 @@
 #endif
 
 #include "pins_RAMPS.h"
+
+#undef SERVO0_PIN
+#define SERVO0_PIN 15
