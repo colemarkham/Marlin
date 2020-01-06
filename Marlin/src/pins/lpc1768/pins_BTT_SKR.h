@@ -45,6 +45,7 @@
 // Temperature Sensors
 //  3.3V max when defined as an analog input
 //
+<<<<<<< Upstream, based on origin/2.0.x
 #ifndef TEMP_0_PIN
   #define TEMP_0_PIN       P0_24_A1   // A1 (T1) - (68) - TEMP_0_PIN
 #endif
@@ -54,6 +55,12 @@
 #ifndef TEMP_BED_PIN
   #define TEMP_BED_PIN     P0_23_A0   // A0 (T0) - (67) - TEMP_BED_PIN
 #endif
+=======
+#define TEMP_BED_PIN       P0_23_A0   // A0 (T0) - (67) - TEMP_BED_PIN
+#define TEMP_0_PIN         P0_24_A1   // A1 (T1) - (68) - TEMP_0_PIN
+#define TEMP_1_PIN         P0_25_A2   // A2 (T2) - (69) - TEMP_1_PIN
+#define TEMP_CHAMBER_PIN   P0_26_A3
+>>>>>>> 4a7da9d Config for testing sensorless
 
 //
 // Heaters / Fans
