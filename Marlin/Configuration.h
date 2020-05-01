@@ -318,7 +318,7 @@
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
 #define TEMP_SENSOR_4 0
-#define TEMP_SENSOR_BED 1
+#define TEMP_SENSOR_BED 0
 #define TEMP_SENSOR_CHAMBER 0
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
@@ -348,7 +348,7 @@
 #define HEATER_2_MINTEMP 5
 #define HEATER_3_MINTEMP 5
 #define HEATER_4_MINTEMP 5
-#define BED_MINTEMP -50
+#define BED_MINTEMP 5
 
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
@@ -382,10 +382,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  // Trinus (By autotune)
-  #define  DEFAULT_Kp 24.37
-  #define  DEFAULT_Ki 0.98
-  #define  DEFAULT_Kd 151.74
+  // Rotary PCR (By autotune)
+  #define DEFAULT_Kp 25.70
+  #define DEFAULT_Ki 2.24
+  #define DEFAULT_Kd 73.70
   
   // Ultimaker
   //  #define DEFAULT_Kp 22.2
@@ -421,7 +421,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-#define PIDTEMPBED
+//#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
