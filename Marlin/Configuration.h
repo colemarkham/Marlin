@@ -627,10 +627,10 @@
 // Uncomment one of these options to enable CoreXY, CoreXZ, or CoreYZ kinematics
 // either in the usual order or reversed
 //#define COREXY
-#define COREXZ
+//#define COREXZ
 //#define COREYZ
 //#define COREYX
-//#define COREZX
+#define COREZX
 //#define COREZY
 
 //===========================================================================
@@ -1111,7 +1111,7 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
+#define INVERT_X_DIR true
 #define INVERT_Y_DIR true
 #define INVERT_Z_DIR false
 
@@ -1147,7 +1147,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 75
+#define X_BED_SIZE 110
 #define Y_BED_SIZE 55
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
